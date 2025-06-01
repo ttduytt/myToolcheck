@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\project\\CHECKTOOL\\CHECKTOOL\\CHECKTOOL.csproj": {}
+    "D:\\work_space_c#\\CHECKTOOL\\CHECKTOOL.csproj": {}
   },
   "projects": {
-    "C:\\project\\CHECKTOOL\\CHECKTOOL\\CHECKTOOL.csproj": {
+    "D:\\work_space_c#\\CHECKTOOL\\CHECKTOOL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\project\\CHECKTOOL\\CHECKTOOL\\CHECKTOOL.csproj",
+        "projectUniqueName": "D:\\work_space_c#\\CHECKTOOL\\CHECKTOOL.csproj",
         "projectName": "CHECKTOOL",
-        "projectPath": "C:\\project\\CHECKTOOL\\CHECKTOOL\\CHECKTOOL.csproj",
-        "packagesPath": "C:\\Users\\partron_vina\\.nuget\\packages\\",
-        "outputPath": "C:\\project\\CHECKTOOL\\CHECKTOOL\\obj\\",
+        "projectPath": "D:\\work_space_c#\\CHECKTOOL\\CHECKTOOL.csproj",
+        "packagesPath": "C:\\Users\\HTC\\.nuget\\packages\\",
+        "outputPath": "D:\\work_space_c#\\CHECKTOOL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\partron_vina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HTC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -53,6 +53,10 @@
             "CommunityToolkit.Mvvm": {
               "target": "Package",
               "version": "[8.4.0, )"
+            },
+            "DotNetEnv": {
+              "target": "Package",
+              "version": "[3.1.1, )"
             },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
