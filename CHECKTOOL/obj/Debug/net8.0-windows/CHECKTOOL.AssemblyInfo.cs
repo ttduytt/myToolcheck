@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CHECKTOOL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0942424ed1b2b7e6ccdff0cfc45767064608e7ee")]
 [assembly: System.Reflection.AssemblyProductAttribute("CHECKTOOL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CHECKTOOL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
