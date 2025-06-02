@@ -27,5 +27,15 @@ namespace CHECKTOOL.View
             InitializeComponent();
             DataContext = loginViewModel;
         }
+
+        private void LoginBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (DataContext is LoginViewModel vm)
+            {
+                vm.Password = passwordBox.Password; // Truyền mật khẩu vào ViewModel
+                vm.LoginCommand.Execute(null);      // Gọi lệnh đăng nhập
+            }
+        }
+
     }
 }

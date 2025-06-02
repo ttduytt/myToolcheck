@@ -1,60 +1,53 @@
-﻿using System;
+﻿using DotNetEnv;
+using MySqlConnector;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
-using MySqlConnector;
-using DotNetEnv;
+using System.Windows;
 
 namespace CHECKTOOL.Configuration
 {
     public class DBconfig
     {
-        private readonly string _connectionString;
+        private const int MAX_BUFFER = 255;
+        private readonly string _iniPath;
+        private string _connectString;
+        [DllImport("kernel32")]
+        private static extern int GetPrivateProfileString(
+            string section, string key, string defaultValue,
+            StringBuilder returnValue, int size, string filePath);
+
         public DBconfig()
         {
-            Env.Load(); // Nếu .env nằm ở thư mục khác, truyền vào đường dẫn: Env.Load("Configs/.env");
-
-            string host = GetRequiredEnv("DB_HOST");
-            string port = GetRequiredEnv("DB_PORT");
-            string db = GetRequiredEnv("DB_NAME");
-            string user = GetRequiredEnv("DB_USER");
-            string pass = GetRequiredEnv("DB_PASSWORD");
-
-            _connectionString = $"Server={host};Database={db};User Id={user};Password={pass};Port={port}";
+            _iniPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "localConfig.ini");
+            if (!File.Exists(_iniPath))
+            {
+                throw new FileNotFoundException("File cấu hình không tồn tại: " + _iniPath);
+            }
         }
 
-        // Hàm hỗ trợ kiểm tra biến môi trường
-        private string GetRequiredEnv(string key)
+        // đọc dữ liệu từ file
+        private string ReadValue(string section, string key)
         {
-            var value = Environment.GetEnvironmentVariable(key);
-            if (string.IsNullOrEmpty(value))
-            {
-                throw new InvalidOperationException($"Biến môi trường '{key}' không được thiết lập hoặc rỗng. Vui lòng kiểm tra file .env.");
-            }
-            return value;
-        }
-        protected MySqlConnection GetConnection()
-        {
-            return new MySqlConnection(_connectionString);
+            StringBuilder buffer = new StringBuilder(MAX_BUFFER);
+            GetPrivateProfileString(section, key, "", buffer, buffer.Capacity, _iniPath);
+            return buffer.ToString();
         }
 
-        public bool TestConnection()
+        public MySqlConnection GetConnection()
         {
-            try
-            {
-                using (MySqlConnection connection = GetConnection())
-                {
-                    connection.Open();
-                    Console.WriteLine("Kết nối thành công!");
-                    return true;
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Kết nối thất bại: " + ex.Message);
-                return false;
-            }
+            string host = ReadValue("DB", "DB_HOST");
+            string port = ReadValue("DB", "DB_PORT");
+            string user = ReadValue("DB", "DB_USER");
+            string pass = ReadValue("DB", "DB_PASSWORD");
+            string db = ReadValue("DB", "DB_NAME");
+
+            _connectString = $"Server={host};Database={db};User Id={user};Password={pass};Port={port};";
+            return new MySqlConnection(_connectString);
         }
     }
 }

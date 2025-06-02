@@ -155,3 +155,8 @@ D:\work_space_c#\CHECKTOOL\obj\Debug\net8.0-windows\refint\CHECKTOOL.dll
 D:\work_space_c#\CHECKTOOL\obj\Debug\net8.0-windows\CHECKTOOL.pdb
 D:\work_space_c#\CHECKTOOL\obj\Debug\net8.0-windows\CHECKTOOL.genruntimeconfig.cache
 D:\work_space_c#\CHECKTOOL\obj\Debug\net8.0-windows\ref\CHECKTOOL.dll
+C:\project\CHECKTOOL\CHECKTOOL\bin\Debug\net8.0-windows\DotNetEnv.dll
+C:\project\CHECKTOOL\CHECKTOOL\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.dll
+C:\project\CHECKTOOL\CHECKTOOL\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\project\CHECKTOOL\CHECKTOOL\bin\Debug\net8.0-windows\Sprache.dll
+C:\project\CHECKTOOL\CHECKTOOL\obj\Debug\net8.0-windows\CHECKTOOL.sourcelink.json

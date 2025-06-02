@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:CHECKTOOL.View"
+             xmlns:local="clr-namespace:CHECKTOOL.View" xmlns:viewmodel="clr-namespace:CHECKTOOL.ViewModel"
+        d:DataContext="{d:DesignInstance Type=viewmodel:LoginViewModel}"
              mc:Ignorable="d"
              Title="Login" Height="400" Width="300"
              WindowStartupLocation="CenterScreen"
@@ -27,13 +28,14 @@
                        Padding="10"
                        />
             <Grid VerticalAlignment="Center">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-                <TextBlock Text="User Name" 
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock
+                   Text="UserName"
                    Grid.Row="0"
                    Margin="0,15"
                    HorizontalAlignment="Left"/>
@@ -41,15 +43,15 @@
                   Grid.Row="1"
                   Padding="0,5"
                   Width="255"
+                  Text="{Binding Username, UpdateSourceTrigger=PropertyChanged}"
                   BorderThickness="0,0,0,1"
                   HorizontalAlignment="Left"
-                  Text=""/>
+                 />
                 <TextBlock Text="Password" 
                    Grid.Row="2"
                    Margin="0,15"
                    HorizontalAlignment="Left"/>
-                <PasswordBox Grid.Row="3"
-                      Password=""
+                    <PasswordBox x:Name="passwordBox" Grid.Row="3"
                       Padding="0,5"                           
                       Width="255"
                       BorderThickness="0,0,0,1"
@@ -58,6 +60,7 @@
             <TextBlock Text="forgot password?" 
                        HorizontalAlignment="Right"/>
                 <Button x:Name="LoginBtn"
+        Click="LoginBtn_Click"
         Content="Login"
         Command="{Binding LoginCommand}"
         Width="250"
