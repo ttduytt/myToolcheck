@@ -94,7 +94,7 @@
                                                 <Setter Property="Foreground" Value="Black" />
                                             </Trigger>
                                             <Trigger Property="IsPressed" Value="True">
-                                                <Setter TargetName="border" Property="Background" Value="DarkRed" />
+                                                <Setter TargetName="border" Property="Background" Value="Gray" />
                                             </Trigger>
                                             <Trigger Property="IsEnabled" Value="False">
                                                 <Setter TargetName="border" Property="Opacity" Value="0.5" />

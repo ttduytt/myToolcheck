@@ -25,6 +25,7 @@ namespace CHECKTOOL.View
         public Login()
         {
             InitializeComponent();
+            loginViewModel.RequestClose += () => this.Close();
             DataContext = loginViewModel;
         }
 
@@ -33,7 +34,6 @@ namespace CHECKTOOL.View
             if (DataContext is LoginViewModel vm)
             {
                 vm.Password = passwordBox.Password; // Truyền mật khẩu vào ViewModel
-                vm.LoginCommand.Execute(null);      // Gọi lệnh đăng nhập
             }
         }
 

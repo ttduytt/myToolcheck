@@ -38,6 +38,8 @@ namespace CHECKTOOL.ViewModel
 
         public ICommand LoginCommand => _loginCommand ??= new RelayCommand(OnLogin);
 
+        public event Action RequestClose;
+
         private void OnLogin()
         {
             bool success = _loginModel.AuthenticateUser(Username, Password);
@@ -45,7 +47,10 @@ namespace CHECKTOOL.ViewModel
             if (success)
             {
                 MessageBox.Show("Đăng nhập thành công!");
-                // Có thể chuyển sang màn hình chính ở đây
+                Barcode barcodeWindow = new Barcode();
+                barcodeWindow.Show();
+
+                RequestClose?.Invoke(); 
             }
             else
             {
