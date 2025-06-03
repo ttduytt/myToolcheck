@@ -1,0 +1,81 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\project\\CHECKTOOL\\CHECKTOOL\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{99581176-9D1C-7E48-92B3-54D63E8E78F4}|CHECKTOOL.csproj|c:\\project\\checktool\\checktool\\configuration\\dbconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99581176-9D1C-7E48-92B3-54D63E8E78F4}|CHECKTOOL.csproj|solutionrelative:configuration\\dbconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99581176-9D1C-7E48-92B3-54D63E8E78F4}|CHECKTOOL.csproj|c:\\project\\checktool\\checktool\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99581176-9D1C-7E48-92B3-54D63E8E78F4}|CHECKTOOL.csproj|solutionrelative:model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99581176-9D1C-7E48-92B3-54D63E8E78F4}|CHECKTOOL.csproj|c:\\project\\checktool\\checktool\\viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99581176-9D1C-7E48-92B3-54D63E8E78F4}|CHECKTOOL.csproj|solutionrelative:viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DBconfig.cs",
+              "DocumentMoniker": "C:\\project\\CHECKTOOL\\CHECKTOOL\\Configuration\\DBconfig.cs",
+              "RelativeDocumentMoniker": "Configuration\\DBconfig.cs",
+              "ToolTip": "C:\\project\\CHECKTOOL\\CHECKTOOL\\Configuration\\DBconfig.cs",
+              "RelativeToolTip": "Configuration\\DBconfig.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAwwBQAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T14:31:09.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\project\\CHECKTOOL\\CHECKTOOL\\ViewModel\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\LoginViewModel.cs",
+              "ToolTip": "C:\\project\\CHECKTOOL\\CHECKTOOL\\ViewModel\\LoginViewModel.cs",
+              "RelativeToolTip": "ViewModel\\LoginViewModel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T14:30:59.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\project\\CHECKTOOL\\CHECKTOOL\\Model\\User.cs",
+              "RelativeDocumentMoniker": "Model\\User.cs",
+              "ToolTip": "C:\\project\\CHECKTOOL\\CHECKTOOL\\Model\\User.cs",
+              "RelativeToolTip": "Model\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T14:30:43.724Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
